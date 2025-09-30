@@ -26,10 +26,10 @@ st.title("Customer Churn Predictor")
 st.write("This app predicts whether a customer will churn or stay, based on their details.")
 
 # Load the trained model
-model_path = path.join("Model", "customer_churn_pipeline.pkl")   # Ensure you save the model here
+model_path = path.join("model", "customer_churn_pipeline.pkl")   # Ensure you save the model here
 churn_predictor = joblib.load(model_path)
 
-data_path = path.join("Data", "Training_data.csv")
+data_path = path.join("data", "Training_data.csv")
 dataset = pd.read_csv(data_path)
 
 
